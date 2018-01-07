@@ -1,0 +1,54 @@
+<section id="home">
+
+    <section class="jumbotron">
+        <div class="container">
+            <h1 class="jumbotron-heading">starter-webpack-angularjs</h1>
+            <p class="lead">A starter for a project with AngularJS (1.x), Bootstrap (4.x) and Font Awesome (4.x) powered by Webpack (3.x).</p>
+            <a href="#" class="btn btn-primary">Main call to action</a>
+            <a href="#" class="btn btn-secondary">Secondary action</a>
+        </div>
+    </section>
+
+    <div class="container">
+
+        <h2>Features</h2>
+        <ul class="fa-ul">
+            <li><i class="fa-li fa fa-check"></i>Webpack configurations for development, production and test.</li>
+            <li><i class="fa-li fa fa-check"></i>ES6, and ES7 support with Babel.</li>
+            <li><i class="fa-li fa fa-check"></i>Add AngularJS DI with annotations (/* @ngInject */).</li>
+            <li><i class="fa-li fa fa-check"></i>Source maps included in all builds.</li>
+            <li><i class="fa-li fa fa-check"></i>Stylesheets with Autoprefixer and SASS (not required, it supports regular css too).</li>
+            <li><i class="fa-li fa fa-check"></i>Development server with live reload and HMR.</li>
+            <li><i class="fa-li fa fa-check"></i>Testing suite with Karma and Jasmine.</li>
+        </ul>
+
+        <div class="card mb-4">
+            <div class="card-body">
+                <h3 class="card-title">Quick start</h3>
+                <pre><code>
+# clone the repo
+$ git clone https://github.com/ducrot/starter-webpack-angularjs.git my-app
+
+# change directory to your app
+$ cd my-app
+
+# install the dependencies with npm
+$ npm install
+
+# start the server
+$ npm start
+                    </code></pre>
+                <p>Go to <a href="http://localhost:8080">http://localhost:8080</a> in your browser!</p>
+            </div>
+        </div>
+
+        <h2>{{home.helloWorld}}<br/>Some super fancy AngularJs demo</h2>
+        <greeting name="home.name"></greeting>
+        <p>
+            <button class="btn btn-primary" ng-click="home.changeName()">Change</button>
+            <button class="btn btn-danger" ng-click="home.randomName()">Random</button>
+        </p>
+
+    </div>
+
+</section>

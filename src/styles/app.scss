@@ -1,0 +1,61 @@
+@import "global";
+@import "bootstrap";
+@import "font-awesome";
+
+
+/* Tweaks
+-------------------------------------------------- */
+html {
+  overflow-y: scroll;
+}
+
+
+/* Optimize margins
+-------------------------------------------------- */
+ol,
+ul,
+dl {
+  margin-bottom: 2rem;
+}
+
+
+/* Fixed Navbar
+-------------------------------------------------- */
+body {
+  padding-top: 4.1rem;
+}
+
+.fixed-top {
+  min-height: 4.1rem;
+}
+
+
+/* Sticky footer
+-------------------------------------------------- */
+$footer-height: 3.5rem;
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: (2*$footer-height);
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: $footer-height;
+  line-height: $footer-height; /* Vertically center the text there */
+  background-color: $gray-200;
+
+  p {
+    margin: 0;
+  }
+
+  .to-top {
+    font-size: $small-font-size;
+  }
+}

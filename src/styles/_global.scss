@@ -1,0 +1,52 @@
+/**
+Import this file into any custom style to get Bootstrap's functions, mixins and variables.
+ */
+
+// Override Bootstrap's variables.
+
+// Color system
+$primary: #E8640C;
+$secondary: #313048;
+
+$white: #fff;
+$dark: #313048;
+$light: #e3E2E2;
+
+
+// Options
+$enable-rounded: false;
+
+
+// Body
+$body-bg: $white;
+$body-color: #333;
+
+
+// Fonts
+$font-family-sans-serif: 'Open Sans', Arial, Helvetica, sans-serif;
+$fa-font-path: "~font-awesome/fonts";
+
+//$h1-font-size:                  2.0rem;
+//$h2-font-size:                  1.8rem;
+//$h3-font-size:                  1.5rem;
+//$h4-font-size:                  1.3rem;
+//$h5-font-size:                  1.1rem;
+//$h6-font-size:                  1rem;
+
+
+// Navbar
+$navbar-dark-color:                 rgba($white, .7);
+$navbar-dark-hover-color:           rgba($white, .9);
+
+
+// Bottom margins
+$paragraph-margin-bottom: 2rem;
+$headings-margin-bottom: 1rem;
+$hr-margin-y: 2rem;
+$form-group-margin-bottom: 2rem;
+$breadcrumb-margin-bottom: 2rem;
+
+
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";

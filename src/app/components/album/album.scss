@@ -1,0 +1,33 @@
+@import "../../../styles/global";
+
+#album {
+
+  .jumbotron-heading {
+    font-weight: 300;
+  }
+
+  .jumbotron .container {
+    max-width: 40rem;
+  }
+
+  .album {
+
+    .card {
+      float: left;
+      width: 33.333%;
+      padding: .75rem;
+      margin-bottom: 2rem;
+      border: 0;
+    }
+
+    .card > img {
+      margin-bottom: .75rem;
+    }
+
+    .card-text {
+      font-size: 85%;
+    }
+
+  }
+
+}
