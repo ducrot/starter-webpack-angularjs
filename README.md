@@ -99,10 +99,3 @@ It's simple, just install the lib via npm and import it in your code when you ne
 ## License
 
 [MIT License](LICENSE)
-
-
-## Changelog
-
-### Version 1.0.0 (2018-01-07)
-
-Initial release.
