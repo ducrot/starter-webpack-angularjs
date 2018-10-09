@@ -22,11 +22,11 @@ $ git clone https://github.com/ducrot/starter-webpack-angularjs.git my-app
 # change directory to your app
 $ cd my-app
 
-# install the dependencies with npm
-$ npm install
+# install the dependencies with yarn
+$ yarn install
 
 # start the server
-$ npm start
+$ yarn start
 ```
 
 Go to [http://localhost:8080](http://localhost:8080) in your browser.
@@ -38,20 +38,20 @@ Go to [http://localhost:8080](http://localhost:8080) in your browser.
 
 What you need to run this app:
 
-* `node` and `npm`
-* Ensure you're running Node (`v8.x.x`+) and NPM (`5.x.x`+)
+* `node` and `yarn`
+* Ensure you're running Node (`v8.x.x`+) and yarn (`1.6.x`+)
 
 ### Installing
 
 * `fork` this repo
 * `clone` your fork
-* `npm install` to install all dependencies
+* `yarn install` to install all dependencies
 
 ### Developing
 
 After you have installed all dependencies you can now start developing with:
 
-* `npm start`
+* `yarn start`
 
 It will start a local server using `webpack-dev-server` which will watch, build (in-memory), and update with Hot Module Replacement (HMR). The application can be checked at `http://localhost:8080`.
 
@@ -59,13 +59,13 @@ It will start a local server using `webpack-dev-server` which will watch, build 
 
 Have a look at [`tests.webpack.js`](src/tests.webpack.js) and [`src/app/components/home/home.controller.test.js`](src/app/components/home/home.controller.test.js).
 
-* Run: `npm test` or `npm run test:live`
+* Run: `yarn test` or `yarn run test:live`
 
 ### Production
 
 To build your application, run:
 
-* `npm run build`
+* `yarn build`
 
 You can now go to `/dist` and deploy that to your server!
 
@@ -78,7 +78,7 @@ No, Webpack will add all the needed Javascript bundles as script tags and all th
 
 #### How to include external angular libraries ?
 
-It's simple, just install the lib via npm and import it in your code when you need it. Don't forget that you need to configure some external libs inside [`/src/app/app.js`](/src/app/app.js).
+It's simple, just install the lib via yarn and import it in your code when you need it. Don't forget that you need to configure some external libs inside [`/src/app/app.js`](/src/app/app.js).
 
 
 ## Credits
