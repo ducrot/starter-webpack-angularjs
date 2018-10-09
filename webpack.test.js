@@ -10,6 +10,7 @@ const webpack = require('webpack');
 const common = require('./webpack.config.js');
 
 module.exports = merge(common, {
+    mode: 'production',
     devtool: "inline-source-map",
     plugins: [
         new webpack.DefinePlugin({

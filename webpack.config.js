@@ -2,7 +2,6 @@
  * Webpack common setup
  */
 const path = require('path');
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 
@@ -24,29 +23,6 @@ module.exports = {
                 }
             },
             {
-                test: /\.css$/,
-                use: ExtractTextPlugin.extract({
-                    use: [
-                        "css-loader",
-                        "postcss-loader"
-                    ],
-                    fallback: "style-loader"
-                })
-            },
-            {
-                test: /\.scss$/,
-                use: ExtractTextPlugin.extract({
-                    use: [{
-                        loader: "css-loader"
-                    }, {
-                        loader: "postcss-loader"
-                    }, {
-                        loader: "sass-loader"
-                    }],
-                    fallback: "style-loader"
-                })
-            },
-            {
                 test: /\.(png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot)$/,
                 use: [
                     'file-loader'
@@ -62,9 +38,6 @@ module.exports = {
     },
     plugins: [
         new CleanWebpackPlugin(['dist']),
-        new ExtractTextPlugin({
-            filename: "[name].[contenthash].css"
-        }),
         new HtmlWebpackPlugin({
             template: 'src/index.html'
         }),
