@@ -39,7 +39,7 @@ Go to [http://localhost:8080](http://localhost:8080) in your browser.
 What you need to run this app:
 
 * `node` and `yarn`
-* Ensure you're running Node (`v12.x.x`+) and yarn (`1.22.x`+)
+* Ensure you're running Node (>=`v12.x` and <=`v14.x`) and yarn (`1.22.x`+)
 
 ### Installing
 
